@@ -1,0 +1,24 @@
+
+# this code will open webpages and Applications
+import os
+import webbrowser
+import time
+import subprocess
+
+new=4
+url_1="http://youtube.com"
+url_2="http://google.com" 
+url_3="http://courses.edx.org/courses/course-v1:Microsoft+DEV236x+1T2018/course"
+url_4="http://stackoverflow.com/questions" 
+
+webbrowser.open(url_1, new=new) 
+time.sleep(1)
+webbrowser.open(url_2, new=new) 
+time.sleep(1)
+webbrowser.open(url_3, new=new) 
+time.sleep(1)
+webbrowser.open(url_4, new=new) 
+# this will open the application
+path = "C:\Program Files\iTunes\iTunes.exe"
+subprocess.Popen([path],shell=True)
+
